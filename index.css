@@ -4,107 +4,83 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  display: flex;
 }
+
 .header {
-  background-color: #010417;
-  margin: 20px;
-  height: auto;
-  width: auto;
-  display: flex;
-  justify-content: space-between;
-}
-.logo {
-  width: 300px;
-  border: 50px;
-  float: left;
-  justify-content: space-between;
-  margin: 20px;
-}
-.logo-container .logo-text {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  align-items: normal;
-  color: #fefdff;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-hr {
-  width: 400%;
-  height: 0;
-  border: 2px solid white;
-}
-section div {
-  text-align: justify;
-}
-
-p {
-  font-size: 16px;
-}
-h2.title {
-  font-weight: bold;
-}
-
-.cruise {
-  background-color: #090012;
-  color: #fafafb;
-  padding: 10px;
-  margin: auto;
-  display: flex;
-}
-.main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.title-left {
-  display: flex;
-  flex-direction: row;
-  font-size: 24px;
-  font-weight: bold;
-  margin: auto;
-  text-align: left;
-}
-
-.title-right {
-  display: flex;
-  flex-direction: row;
-  font-size: 24px;
-  font-weight: bold;
-  margin: auto;
-  text-align: right;
-}
-.description {
-  font-size: 16px;
-  color: #f8f5f5;
-  margin-bottom: 10px;
-  flex-direction: row;
-  text-align: justify;
-}
-.nav-item {
   display: flex;
   align-items: center;
-  margin: auto;
-  color: #666;
-}
-.content-container {
-  margin: auto;
-}
-.images-left {
-  max-width: 500px;
-  max-height: 500px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
 }
-.images-right {
-  float: right;
-  max-width: 500px;
-  max-height: 500px;
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  margin-top: 20px;
+  color: white;
+}
+nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: gray;
+}
+
+.navbar-divider {
+  margin: 20px 0;
+  border: 0;
+  border-top: 2px solid #cccccc;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+
+  height: 60vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/cruise1.jpeg") no-repeat center center/cover;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ffcc00;
+  color: #002147;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #e6b800;
 }
